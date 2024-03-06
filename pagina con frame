@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Todo sobre los Beagles</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5">Todo sobre los Beagles</h1>
+        <div class="mt-5">
+            <h2>Características</h2>
+            <p>Los beagles son perros compactos y musculosos con un cráneo ligeramente abombado. Tienen un pelaje corto, denso y resistente a las inclemencias del clima.</p>
+            <h2>Comportamiento</h2>
+            <p>Son perros muy activos y han sido perros cazadores, por lo que buscar presas, ladrar para avisar y traértelas les encanta.</p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
