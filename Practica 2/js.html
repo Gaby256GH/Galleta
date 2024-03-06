@@ -3,52 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NIÑO PHP</title>
+    <title>Document</title>
     <script>
-        function alerta (boton){
-            var fecha = new Date();
-            var hora=fecha.getHours();
-            var minutos=fecha.getMinutes();
-           hora=23;
+         function mostrarSaludoYHora() {
+            var newdate = new Date();
+            var horas = newdate.getHours();
+            var minutos = newdate.getMinutes();
+            var segundos = newdate.getSeconds();
+            var saludo;
 
-            if(hora<=12){
-                saludo='Buenos Dias';
-
+            if (horas < 12) {
+                saludo = 'Buenos días';
+            } else if (horas < 19) {
+                saludo = 'Buenas tardes';
+            } else {
+                saludo = 'Buenas noches';
             }
 
-            else if(hora>12 && hora<=19){
-                saludo='Buenas tardes'
+            alert(saludo + '\nHora: ' + horas + ':' + minutos + ':' + segundos);
+        }
 
-
-            }
-            else if(hora>19){
-                saludo='Buenas noches'
-            }
-
-            /*
-            saludo= 'buenas tardes';
-            if(now<=12){
-                saludo='Buenos dias';
-
-            }
-            else{
+        function alerta(boton) {
+         if (boton.value == "AM") {
+                saludo='Buenos días';
+            } else  {
                 saludo='Buenas tardes';
             }
-            boton.value=saludo;
-           
-        
-    */
-   
-    alert(saludo);
+            
+            boton.value = saludo;                    
+    
         }
+         alert (saludo); 
     </script>
 </head>
 
 <body>
-    <input type="button" value="ok" onclick="confirm('Hola');">
-    <input type="button" value="ok" onclick="alert('Hola');">
-    <br>
-    <input type="button" value="AM" onclick="alerta(this);">
-    <input type="button" value="PM" onclick="alerta(this);">
+    <input type="button" value="OK" onclick="alert('Hola')">
+    <input type="button" value="OK" onclick="confirm('Hola')">
+    <BR></BR>
+    <input type="button" value="AM" onclick="alerta(this)">
+    <input type="button" value="PM" onclick="alerta(this)">
+    <BR></BR>
+    <input type="button" value="Mostrar Saludo y Hora" onclick="mostrarSaludoYHora()">
+
 </body>
 </html>
